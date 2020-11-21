@@ -1,0 +1,271 @@
+$color1: #26272d;
+$color2: #8c8f94;
+$color3: #3a3d4b;
+$blue: #267df4;
+$white: #fff;
+$features-bg: #f5f5f8;
+$pricing-bg: #f4f4f5;
+$pricing-not-act-card: #ebebed;
+
+html {
+	font-size: 20px;
+	color: $color1;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: $color1;
+	text-decoration: none;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2.1rem;
+}
+
+.container {
+	width: 80vw;
+	margin: 0px auto;
+}
+
+.button {
+	background: $blue;
+	padding: 15px 25px;
+	color: $white;
+	font-size: 0.8rem;
+	border-radius: 21px;
+}
+
+.border-button {
+	border-radius: 25px;
+	background: none;
+	border: 1px solid $color1;
+	color: $color1;
+}
+
+.description {
+	.description__title {
+		margin-bottom: 65px;
+	}
+	.description__text {
+		font-size: 1rem;
+	}
+}
+
+header {
+	background: #d7dbdb url(../img/header-bg.jpg) no-repeat center center / cover;
+	background-attachment: fixed;
+	height: 100vh;
+	overflow: hidden;
+	.hat {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 4vh;
+		nav {
+			display: flex;
+			align-items: center;
+			.nav {
+				display: flex;
+				font-size: 0.8rem;
+				li {
+					margin-right: 40px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.hat__button {
+				margin-left: 40px;
+				padding: 12px 25px;
+				&:before {
+					font-family: "Font Awesome 5 Brands";
+					content: '\f179';
+					margin-right: 15px;
+					font-size: 1rem;
+				}
+			}
+		}
+		.logo {
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			span {
+				font-weight: 900;
+			}
+		}
+	}
+	.description {
+		width: 60vw;
+		margin: 0px auto;
+		text-align: center;
+		margin-top: 12vh;
+		margin-bottom: 5vh;
+		.description__title {
+			font-size: 3.1rem;
+			margin-bottom: 4vh;
+		}
+	}
+	.header__button-wrap {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5vh;
+		.header__button {
+			&:before {
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				content: "\f04b";
+				margin-right: 15px;
+			}
+		}
+	}
+	&:after {
+		content: '';
+		display: block;
+		background: url(../img/header-iPhone.png) no-repeat center center / contain;
+		margin: 0px auto;
+		width: 100%;
+		height: 70vh;
+	}
+}
+// 
+
+
+
+
+
+
+//  Дописать font-size везде дальше!!!
+
+
+
+
+
+
+
+// 
+#tour {
+	background: $white;
+	.pluses-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 120px;
+		margin-bottom: 120px;
+		.plus-wrap {
+			width: 45%;
+			.plus__description {
+				.description__title {
+					margin-bottom: 45px;
+					margin-top: 45px; 	
+				}
+				.description__text {
+					color: $color2;
+					margin-bottom: 0;
+				}
+				&:before {
+					content: '';
+					display: block;
+				}
+			}
+			&:before {
+				content: '';
+				display: block;
+				height: 51px;
+				width: 42px;
+				background: url(../img/lock.png);
+			}
+			&:nth-child(2):before {
+				height: 47px;
+				width: 41px;
+				background: url(../img/clock.png);
+			}
+		}
+		&:after {
+			display: block;
+			margin-top: 120px;
+			content: '';
+			height: 1px;
+			width: 100%;
+			background: $color1;
+		}
+	}
+	.protect-wrap {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		.protect__description {
+			margin-top: 140px;
+			width: 43%;
+			margin-bottom: 440px;
+			.description__title {
+				margin-bottom: 70px;
+			}
+			.description__text {
+				color: $color2;
+			}
+			.buttons-wrap {
+				margin-top: 70px;
+				.protect__button {
+					margin-right: 20px;
+					&:first-child:after {
+						font-family: "Font Awesome 5 Free";
+						font-weight: 900;
+						content: "\f061";
+						margin-left: 45px;
+					}
+				}
+			}
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			background: url(../img/iPhone-pass.png) no-repeat center center / contain;
+			width: 75%;
+			height: 75%;
+			top: 0px;
+			left: -25%;
+		}
+	}
+	.everywhere-wrap {
+		display: flex;
+		justify-content: flex-start;
+		position: relative;
+		.everywhere__description {
+			width: 43%;
+			margin-bottom: 220px;
+			.description__title {
+				margin-bottom: 60px;
+			}
+			.description__text {
+				color: $color2;
+			}
+			.everywhere__partners {
+				margin-top: 60px;
+				.partner__title {
+					text-transform: uppercase;
+				}
+				
+			}
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			background: url(../img/map.png) no-repeat center center / contain;
+			width: 75%;
+			height: 75%;
+			top: 0px;
+			right: -25%;
+		}
+	}
+}
